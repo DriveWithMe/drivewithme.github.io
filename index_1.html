@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DriveWithMe | Learning to drive, made easier</title>
+<meta name="description" content="DriveWithMe helps learner drivers pass their theory test and helps driving instructors run their business with less hassle.">
+<meta property="og:title" content="DriveWithMe | Learning to drive, made easier">
+<meta property="og:description" content="Free theory practice for learner drivers. One simple app for driving instructors.">
+<meta property="og:image" content="logo.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<style>
+  :root{
+    --turq:#5CE1E6;
+    --turq-soft:#e9fbfc;
+    --coral:#DB3E3E;
+    --ink:#121719;
+    --muted:#4b585c;
+    --bg:#f6f8f9;
+    --card:#ffffff;
+    --line:#dfe7e9;
+    --link:#12747a;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link)}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+  /* Hero */
+  .hero{background:var(--turq);text-align:center;padding:40px 0 56px}
+  .hero img{display:block;margin:0 auto 8px;width:min(300px,70vw);height:auto}
+  .hero h1{
+    margin:10px 0 12px;
+    font-size:clamp(2rem,5.5vw,3.1rem);
+    line-height:1.12;
+    letter-spacing:-.02em;
+  }
+  .hero p{
+    margin:0 auto;
+    max-width:620px;
+    font-size:clamp(1.05rem,2.4vw,1.25rem);
+    color:rgba(18,23,25,.85);
+  }
+  .badge{
+    display:inline-block;
+    margin-top:24px;
+    padding:10px 20px;
+    border-radius:999px;
+    background:var(--ink);
+    color:#fff;
+    font-weight:600;
+    font-size:.98rem;
+  }
+
+  /* Sections */
+  section{padding:56px 0 0}
+  h2{
+    margin:0 0 6px;
+    font-size:clamp(1.5rem,3.6vw,2rem);
+    letter-spacing:-.01em;
+  }
+  .lead{margin:0 0 24px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:28px;
+  }
+  .card h3{margin:0 0 4px;font-size:1.3rem}
+  .tag{
+    display:inline-block;
+    margin-bottom:14px;
+    padding:3px 12px;
+    border-radius:999px;
+    background:var(--turq-soft);
+    color:var(--link);
+    font-size:.82rem;
+    font-weight:700;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+  }
+  ul{margin:14px 0 0;padding:0;list-style:none}
+  li{position:relative;padding:7px 0 7px 28px}
+  li::before{
+    content:"";
+    position:absolute;left:0;top:14px;
+    width:14px;height:14px;border-radius:50%;
+    background:var(--turq);
+    box-shadow:inset 0 0 0 4px var(--turq-soft);
+    border:2px solid var(--turq);
+  }
+  li.soon::before{background:#fff;border-color:var(--coral);box-shadow:none}
+  .soon-note{color:var(--coral);font-weight:700}
+
+  /* Why */
+  .why{
+    margin-top:56px;
+    background:var(--ink);
+    color:#fff;
+    padding:52px 0;
+    text-align:center;
+  }
+  .why h2{color:#fff}
+  .why p{
+    margin:8px auto 0;
+    max-width:640px;
+    font-size:1.12rem;
+    color:rgba(255,255,255,.88);
+  }
+  .why span{color:var(--turq)}
+
+  /* Contact */
+  .contact{text-align:center;padding-bottom:20px}
+  .contact p{margin:0 0 6px}
+  .contact .big{font-size:1.25rem;font-weight:700}
+
+  footer{
+    margin-top:48px;
+    padding:28px 0 36px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    color:var(--muted);
+    font-size:.9rem;
+  }
+  footer p{margin:4px 0}
+
+  @media (max-width:720px){
+    .grid{grid-template-columns:1fr}
+    .card{padding:22px}
+    .hero{padding:28px 0 44px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="logo.png" alt="DriveWithMe logo: a steering wheel above the DriveWithMe name" width="300" height="207">
+    <h1>Learning to drive, made easier.</h1>
+    <p>DriveWithMe helps learner drivers pass their theory test and helps driving instructors run their business with less hassle.</p>
+    <span class="badge">Coming soon to the App Store</span>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <div class="grid">
+
+        <div class="card">
+          <span class="tag">For learners</span>
+          <h3>Pass your theory with confidence</h3>
+          <ul>
+            <li>Free theory practice across all 14 DVSA categories</li>
+            <li>Quick quizzes, full mock tests and quizzes by topic</li>
+            <li>The Highway Code split into topics, with progress tracking so you know what you've covered</li>
+            <li class="soon"><span class="soon-note">Coming soon:</span> find an instructor and see your progress after every lesson</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="tag">For instructors</span>
+          <h3>Run your business from one app</h3>
+          <ul>
+            <li>Your diary and availability in one place, with drive times between lessons</li>
+            <li>All your learners' details and lesson notes in one app, instead of WhatsApp and paper</li>
+            <li>Lesson reminders and a clear view of tomorrow</li>
+            <li>Income, expenses, mileage and receipts, with a tax-year summary</li>
+            <li>Less admin and more time teaching</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="why">
+    <div class="wrap">
+      <h2>Why we built <span>DriveWithMe</span></h2>
+      <p>We built DriveWithMe to make instructors' lives easier and take the hassle out of learning to drive, with the learner at the centre of it all.</p>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p class="lead">Questions, ideas or want to hear more? We'd love to hear from you.</p>
+      <p class="big"><a href="mailto:Drivewithme.app@gmail.com">Drivewithme.app@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/drivewithme.app/" rel="noopener">@drivewithme.app</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="https://drivewithme.github.io/drivewithme-privacy/">Privacy policy</a></p>
+    <p>DriveWithMe is not affiliated with the DVSA or any government body.</p>
+  </div>
+</footer>
+
+</body>
+</html>
