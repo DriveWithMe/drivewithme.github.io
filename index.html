@@ -302,8 +302,12 @@
     .ring{width:130vw;right:-62vw;top:auto;bottom:30px;margin-top:0;opacity:.8;-webkit-mask-image:none;mask-image:none}
     .scrollhint{left:58px;bottom:40px}
     .appicon{width:72px;height:72px}
-    .applisting{padding:12px 16px 12px 12px;gap:14px}
-    .soon-pill{font-size:.78rem;white-space:nowrap;padding:6px 11px}
+    .applisting{display:grid;grid-template-columns:72px 1fr;grid-template-rows:auto auto auto;column-gap:14px;row-gap:0;align-items:center;width:100%;max-width:380px;padding:14px;border-radius:26px}
+    .applisting .meta{display:contents}
+    .applisting .appicon{grid-row:1 / 3;grid-column:1}
+    .applisting strong{grid-column:2;grid-row:1;align-self:end;font-size:1.1rem}
+    .applisting span{grid-column:2;grid-row:2;align-self:start;font-size:.9rem;line-height:1.3}
+    .soon-pill{grid-column:1 / -1;grid-row:3;justify-content:center;margin-top:14px;font-size:.84rem;white-space:nowrap;padding:10px 12px}
     .brand img{height:42px}
     .top{padding:10px 12px}
     .top nav a.hide-m{display:none}
